@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>online grocery shopping and online food delivery web application</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+
+    <section id="header">
+        <div class="container">
+            <img src="images/logoip1.png" class="logo">
+            <div class="header-text">
+                <h1>FOODIE</h1>
+                <span class="square"></span>
+                <p><i>Online grocery shopping and<br> online food delivery web application.</i></p>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#">HOTELS</a></li>
+            <li><a href="#">GROCERIES</a></li>
+            <li><a href="#">DELIVERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+
+            
+
+
+            
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+
+
+    <!--ABOUT-->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/aboutip.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>ABOUT US</h1>
+                <span class="square"></span>
+                <p><i>The web application developed to provide online food ordering and delivery both food and
+                    vegetables and restaurant table reservation services to our customers. Our customers can order food or reserve table 
+                    at a restaurant online based on the type of the cuisine they like, the location, the price range etc.
+                     We communicate with our users through e-mails. Our customers are required to create an account
+                      on our website to ensure security and a customised experience when further enhancements are done on the website.</i></p><br><br>
+                      <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+                      <h2>"Let food be thy medicine and medicine be thy food"</h2>
+                      <h3>--Hippocrates</h3>
+            </div>
+        </div>
+    </section>
+
+
+<!--features-->
+
+<section id="features">
+    <div class="feature-row">
+        <div class="feature-col">
+            <img src="images/pic1.png">
+            <h4>Includes groceries</h4>
+            <p>order groceries easily from home </p>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic2.png">
+            <h4>Pre-bookings</h4>
+            <p>Book table and food from home </p>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic3.png">
+            <h4>Fast delivery</h4>
+            <p>no more waiting for food</p>
+        </div>
+    </div>
+</section>
+
+
+<!--contact-->
+
+<section id="contact">
+    <div class="container contect-row">
+        <div class="contact-left-col">
+            <h1>Sign up to join our <br>community</h1>
+            <form>
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <input type="password" placeholder="Enter Password">
+                <div class="btn=box">
+                    <button class="common-btn">sign up</button>
+                   </div>
+            </form>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+        </div>
+        <div class="contact-right-col">
+            <img src="images/contact.png">
+        </div>
+    </div>
+</section>
+  
+
+<!--footer-->
+
+<section id="footer">
+    <div class="container footer-row">
+        <hr>
+        <div class="footer-left-col">
+            <div class="footer-links">
+                <div class="link-title">
+                    <h4>Support</h4>
+                    <small>Features</small><br>
+                    <small>Contact us</small>
+                </div>
+                <div class="link-title">
+                    <h4>Explore</h4>
+                    <small>Find a non-profit</small><br>
+                    <small>corporate solution</small>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-col">
+            <div class="footer-info">
+                <div class="copyright-text">
+                    <small>support@xypo.com</small>
+                    <small>copyright 2021 Xypo</small>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/logoip1.png">
+                    <button class="common-btn">English</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--social-icons-->
+
+<div class="Social-icons">
+    <img src="images/facebook.png">
+    <img src="images/twitter.png">
+    <img src="images/instagram.png">
+    <img src="images/linkedin.png">
+</div>
+
+
+
+
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+
+        
+	
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 3000
+});
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
